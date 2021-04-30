@@ -1,15 +1,10 @@
-#################################################################
-#               ((Image Manipulation Detection))                #
-#                                                               #
-#  Name       : Eashan Adhikarla                                #
-#  Course     : Media Forensics                                 #
-#  Assignment : Mini-Project 2                                  #
-#  Instructor : Dr. Aparna Bharati                              #
-#                                                               #
-#################################################################
 
-# Prerequisites
-## base
+## Image Manipulation Detection
+
+<p align="left", style="font-size:30px"><b>Author:</b><br />Eashan Adhikarla</p>
+
+## Prerequisites
+### base
 matplotlib>=3.2.2
 numpy>=1.18.5
 opencv-python>=4.1.2
@@ -19,19 +14,15 @@ scipy>=1.4.1
 torch>=1.7.0
 torchvision>=0.8.1
 tqdm>=4.41.0
-
-## logging 
+### logging 
 tensorboard>=2.4.1
-
-## plotting
+### plotting
 seaborn>=0.11.0
 pandas
-
-## export
+### export
 coremltools>=4.1
 onnx>=1.8.1
 scikit-learn==0.19.2  # for coreml quantization
-
 ### extras
 thop  # FLOPS computation
 pycocotools>=2.0 
@@ -143,4 +134,3 @@ https://arxiv.org/pdf/1911.00686.pdf
 - COCO PythonAPI, https://github.com/cocodataset/cocoapi
 
 -----------------------------------------------------------------
-Thank You!
