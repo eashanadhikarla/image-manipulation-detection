@@ -3,8 +3,8 @@
 
 <p align="left", style="font-size:30px"><b>Author:</b><br />Eashan Adhikarla</p>
 
-## Prerequisites
-### base
+### Prerequisites
+#### base
 matplotlib>=3.2.2
 numpy>=1.18.5
 opencv-python>=4.1.2
@@ -14,22 +14,22 @@ scipy>=1.4.1
 torch>=1.7.0
 torchvision>=0.8.1
 tqdm>=4.41.0
-### logging 
+#### logging 
 tensorboard>=2.4.1
-### plotting
+#### plotting
 seaborn>=0.11.0
 pandas
-### export
+#### export
 coremltools>=4.1
 onnx>=1.8.1
 scikit-learn==0.19.2  # for coreml quantization
-### extras
+#### extras
 thop  # FLOPS computation
 pycocotools>=2.0 
 
 -----------------------------------------------------------------
 
-## Dropbox Drive Link for Data & Output
+### Dropbox Drive Link for Data & Output
 (restricted to Lehigh email address)
 All the trained models for Task 1 and Task 2 can be found in the 
 link below.
@@ -39,8 +39,8 @@ Link: (Task 2, Data) https://www.dropbox.com/sh/oj6uiuoojvkqcrg/AAALudpDKtcu9PnJ
 
 -----------------------------------------------------------------
 
-# File description:
-## Task 1:
+### File description:
+#### Task 1:
 - To detect the image manipulation localization detection using a
 deep learning model of our choice.
 - I chose to designed a state-of-the-art YOLO-V5 model for this task,
@@ -82,7 +82,7 @@ download the processed data from the link above in the dataset section.)
 
 python3.8 train.py --img 640 --batch 16 --epochs 50 --data forgery.yaml --weights (downloaded from the link above)
 
-## Task 2 & Bonus:
+#### Task 2 & Bonus:
 - To perform a deepfake detection on the face image dataset. As there are 
 many face editing algorithms seem to produce realistic human faces, upon 
 closer examination, they do exhibit artifacts in certain domains which 
@@ -123,7 +123,7 @@ Setup:
 
 -----------------------------------------------------------------
 
-# Reference
+### Reference
 
 - Dr. Aparna Bharati, Class notes, Presentation 6,7,10, (L6-Formats & Compression; L7-Image Tampering Detection; L10-Image Tampering Detection)
 - Zhou et al., Learning Rich Features for Image Manipulation Detection, 
