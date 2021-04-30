@@ -5,27 +5,27 @@
 
 ### Prerequisites
 #### base
-matplotlib>=3.2.2
-numpy>=1.18.5
-opencv-python>=4.1.2
-Pillow
-PyYAML>=5.3.1
-scipy>=1.4.1
-torch>=1.7.0
-torchvision>=0.8.1
-tqdm>=4.41.0
+- matplotlib>=3.2.2
+- numpy>=1.18.5
+- opencv-python>=4.1.2
+- Pillow
+- PyYAML>=5.3.1
+- scipy>=1.4.1
+- torch>=1.7.0
+- torchvision>=0.8.1
+- tqdm>=4.41.0
 #### logging 
-tensorboard>=2.4.1
+- tensorboard>=2.4.1
 #### plotting
-seaborn>=0.11.0
-pandas
+- seaborn>=0.11.0
+- pandas
 #### export
-coremltools>=4.1
-onnx>=1.8.1
-scikit-learn==0.19.2  # for coreml quantization
+- coremltools>=4.1
+- onnx>=1.8.1
+- scikit-learn==0.19.2  # for coreml quantization
 #### extras
-thop  # FLOPS computation
-pycocotools>=2.0 
+- thop  # FLOPS computation
+- pycocotools>=2.0 
 
 -----------------------------------------------------------------
 
@@ -33,9 +33,9 @@ pycocotools>=2.0
 (restricted to Lehigh email address)
 All the trained models for Task 1 and Task 2 can be found in the 
 link below.
-Link: (Task 1, Data) https://www.dropbox.com/sh/sl5p7ho1btrz0uk/AADIeMT3sd-OiyCSMaSygMsja?dl=0
-Link: (Task 2, Checkpoint) https://www.dropbox.com/sh/oavmxkb2ic1rx4e/AAClmYRUCXA1ZMCicGwPjLewa?dl=0
-Link: (Task 2, Data) https://www.dropbox.com/sh/oj6uiuoojvkqcrg/AAALudpDKtcu9PnJqnExGWvta?dl=0
+- Link: (Task 1, Data) https://www.dropbox.com/sh/sl5p7ho1btrz0uk/AADIeMT3sd-OiyCSMaSygMsja?dl=0
+- Link: (Task 2, Checkpoint) https://www.dropbox.com/sh/oavmxkb2ic1rx4e/AAClmYRUCXA1ZMCicGwPjLewa?dl=0
+- Link: (Task 2, Data) https://www.dropbox.com/sh/oj6uiuoojvkqcrg/AAALudpDKtcu9PnJqnExGWvta?dl=0
 
 -----------------------------------------------------------------
 
