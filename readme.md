@@ -41,6 +41,9 @@ link below.
 
 ### File description:
 #### Task 1:
+
+![Detection on COCO Tampered Dataset](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/test_batch1_pred.jpg)
+
 - To detect the image manipulation localization detection using a
 deep learning model of our choice.
 - I chose to designed a state-of-the-art YOLO-V5 model for this task,
@@ -81,6 +84,16 @@ download the processed data from the link above in the dataset section.)
     - First go to src/yolov5 directory and then run the following command
 
 python3.8 train.py --img 640 --batch 16 --epochs 50 --data forgery.yaml --weights (downloaded from the link above)
+
+### Results
+#### YOLOv5x-TTA
+![Precision-Recall Curve](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/PR_curve.png)
+
+#### Overall score
+![Overall Metrics](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/results.png)
+
+#### Dataset Description
+![Dataset COCO Tampered](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/labels.jpg)
 
 #### Task 2 & Bonus:
 - To perform a deepfake detection on the face image dataset. As there are 
