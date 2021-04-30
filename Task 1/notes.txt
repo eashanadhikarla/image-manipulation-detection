@@ -1,0 +1,18 @@
+File description:
+------------------
+
+Class labels -> { 0: Authentic, 
+				  1: Tampered }
+
+train_filter.txt -> Contains 90% of tampered files in 'coco_synthetic' (Tp*) and their corresponding orignals (COCO_train2014*) with their bounding boxes of the tampered region and class label.
+test_filter.txt  -> Contains remaining 10% of tampered files in 'coco_synthetic' (Tp*) and their corresponding orignals (COCO_train2014*) with their bounding boxes of the tampered region and class label.
+
+In both the files the file format is:
+
+- Starting with Tp: [ filename_fileID_(6 digit number)_boudingbox_classID BoudingBox ClassLabel ]
+(QUESTION) I did not understand what is the 6 digit number in the filename, and why 2 bounding box cordinates in every single row?
+
+- Starting with COCO_train2014* : [ filename_fileID  BoudingBoxes  ClassLabel]
+
+train_filter_single.txt -> Only contains 90% tampered images with their bounding boxes and class label.
+test_filter_single.txt  -> Only contains 10% tampered images with their bounding boxes and class label.
