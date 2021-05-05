@@ -1,55 +1,15 @@
-#################################################################
-#               ((Image Manipulation Detection))                #
-#                                                               #
-#  Name       : Eashan Adhikarla                                #
-#  Course     : Media Forensics                                 #
-#  Assignment : Mini-Project 2                                  #
-#  Instructor : Dr. Aparna Bharati                              #
-#                                                               #
-#################################################################
 
-# Prerequisites
-## base
-matplotlib>=3.2.2
-numpy>=1.18.5
-opencv-python>=4.1.2
-Pillow
-PyYAML>=5.3.1
-scipy>=1.4.1
-torch>=1.7.0
-torchvision>=0.8.1
-tqdm>=4.41.0
+## Image Manipulation Detection
 
-## logging 
-tensorboard>=2.4.1
-
-## plotting
-seaborn>=0.11.0
-pandas
-
-## export
-coremltools>=4.1
-onnx>=1.8.1
-scikit-learn==0.19.2  # for coreml quantization
-
-### extras
-thop  # FLOPS computation
-pycocotools>=2.0 
+<p align="left", style="font-size:30px"><b>Author:</b><br />Eashan Adhikarla</p>
 
 -----------------------------------------------------------------
 
-## Dropbox Drive Link for Data & Output
-(restricted to Lehigh email address)
-All the trained models for Task 1 and Task 2 can be found in the 
-link below.
-Link: (Task 1, Data) https://www.dropbox.com/sh/sl5p7ho1btrz0uk/AADIeMT3sd-OiyCSMaSygMsja?dl=0
-Link: (Task 2, Checkpoint) https://www.dropbox.com/sh/oavmxkb2ic1rx4e/AAClmYRUCXA1ZMCicGwPjLewa?dl=0
-Link: (Task 2, Data) https://www.dropbox.com/sh/oj6uiuoojvkqcrg/AAALudpDKtcu9PnJqnExGWvta?dl=0
+### File description:
+#### Task 1:
 
------------------------------------------------------------------
+![Detection on COCO Tampered Dataset](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/test_batch1_pred.jpg)
 
-# File description:
-## Task 1:
 - To detect the image manipulation localization detection using a
 deep learning model of our choice.
 - I chose to designed a state-of-the-art YOLO-V5 model for this task,
@@ -91,7 +51,17 @@ download the processed data from the link above in the dataset section.)
 
 python3.8 train.py --img 640 --batch 16 --epochs 50 --data forgery.yaml --weights (downloaded from the link above)
 
-## Task 2 & Bonus:
+### Results
+#### YOLOv5x-TTA
+![Precision-Recall Curve](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/PR_curve.png)
+
+#### Overall score
+![Overall Metrics](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/results.png)
+
+#### Dataset Description
+![Dataset COCO Tampered](https://github.com/eashanadhikarla/image-manipulation-detection/blob/main/Task%201/output/labels.jpg)
+
+#### Task 2 & Bonus:
 - To perform a deepfake detection on the face image dataset. As there are 
 many face editing algorithms seem to produce realistic human faces, upon 
 closer examination, they do exhibit artifacts in certain domains which 
@@ -129,10 +99,45 @@ Setup:
             - mlpBest.pt
             - knnclassifierBest.pt
 
+-----------------------------------------------------------------
+
+### Dropbox Drive Link for Data & Output
+(restricted to Lehigh email address)
+All the trained models for Task 1 and Task 2 can be found in the 
+link below.
+- Link: (Task 1, Data) https://www.dropbox.com/sh/sl5p7ho1btrz0uk/AADIeMT3sd-OiyCSMaSygMsja?dl=0
+- Link: (Task 2, Checkpoint) https://www.dropbox.com/sh/oavmxkb2ic1rx4e/AAClmYRUCXA1ZMCicGwPjLewa?dl=0
+- Link: (Task 2, Data) https://www.dropbox.com/sh/oj6uiuoojvkqcrg/AAALudpDKtcu9PnJqnExGWvta?dl=0
 
 -----------------------------------------------------------------
 
-# Reference
+### Prerequisites
+#### base
+- matplotlib>=3.2.2
+- numpy>=1.18.5
+- opencv-python>=4.1.2
+- Pillow
+- PyYAML>=5.3.1
+- scipy>=1.4.1
+- torch>=1.7.0
+- torchvision>=0.8.1
+- tqdm>=4.41.0
+#### logging 
+- tensorboard>=2.4.1
+#### plotting
+- seaborn>=0.11.0
+- pandas
+#### export
+- coremltools>=4.1
+- onnx>=1.8.1
+- scikit-learn==0.19.2  # for coreml quantization
+#### extras
+- thop  # FLOPS computation
+- pycocotools>=2.0 
+
+-----------------------------------------------------------------
+
+### Reference
 
 - Dr. Aparna Bharati, Class notes, Presentation 6,7,10, (L6-Formats & Compression; L7-Image Tampering Detection; L10-Image Tampering Detection)
 - Zhou et al., Learning Rich Features for Image Manipulation Detection, 
@@ -143,4 +148,3 @@ https://arxiv.org/pdf/1911.00686.pdf
 - COCO PythonAPI, https://github.com/cocodataset/cocoapi
 
 -----------------------------------------------------------------
-Thank You!
