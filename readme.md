@@ -101,16 +101,6 @@ Setup:
 
 -----------------------------------------------------------------
 
-### Dropbox Drive Link for Data & Output
-(restricted to Lehigh email address)
-All the trained models for Task 1 and Task 2 can be found in the 
-link below.
-- Link: (Task 1, Data) https://www.dropbox.com/sh/sl5p7ho1btrz0uk/AADIeMT3sd-OiyCSMaSygMsja?dl=0
-- Link: (Task 2, Checkpoint) https://www.dropbox.com/sh/oavmxkb2ic1rx4e/AAClmYRUCXA1ZMCicGwPjLewa?dl=0
-- Link: (Task 2, Data) https://www.dropbox.com/sh/oj6uiuoojvkqcrg/AAALudpDKtcu9PnJqnExGWvta?dl=0
-
------------------------------------------------------------------
-
 ### Prerequisites
 #### base
 - matplotlib>=3.2.2
