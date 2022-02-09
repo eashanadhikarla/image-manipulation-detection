@@ -12,8 +12,8 @@
 
 - To detect the image manipulation localization detection using a
 deep learning model of our choice.
-- I chose to designed a state-of-the-art YOLO-V5 model for this task,
-although there are other good choices too, such as, Mask-RCNN, 
+- I implemented a state-of-the-art YOLO-V5 model for this task,
+although there are other good choices too, such as; Mask-RCNN, 
 Faster-RCNN, Efficient-D7, etc. Based on my previous experience with
 YOLO-V5 it was the model of my choice.
 
